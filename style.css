@@ -658,6 +658,9 @@ footer span {
   .contact-form {
     width: 100%;
   }
+  .active-menu {
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
   .home-image {
@@ -678,8 +681,5 @@ footer span {
   }
   .section-title {
     font-size: 3rem;
-  }
-  .active-menu {
-    width: 100%;
   }
 }
