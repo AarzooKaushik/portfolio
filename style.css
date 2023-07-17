@@ -572,7 +572,7 @@ footer span {
   }
 
   .home-content-container {
-    height: 80vh;
+    height: 85vh;
     flex-direction: column-reverse;
     padding: 0;
     gap: 9.6rem;
