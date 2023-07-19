@@ -163,6 +163,7 @@ function isemail(email) {
 }
 function validatePhoneNumber(phone) {
   var phoneRegex = /^(\d{3}[-\s]?\d{3}[-\s]?\d{4})$/;
+  // var phoneRegex = /^[^a-zA-Z]*$/;
   return phoneRegex.test(phone);
 }
 const validate = {
