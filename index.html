@@ -64,7 +64,7 @@
             Hello , I'm <span class="dash-bar"></span>
           </h1>
           <h1>Aarzoo Kaushik</h1>
-          <p>FrontEnd Developer</p>
+          <p>Front-End Developer</p>
           <button
             onclick="location.href='#contact-section'"
             class="primary-button"
@@ -82,10 +82,6 @@
           <img src="./assets/portfolio image.webp" alt="" />
         </div>
       </div>
-
-      <!-- <div class="background-overlay background-overlay-1"></div>
-      <div class="background-overlay background-overlay-2"></div>
-      <div class="background-overlay background-overlay-3"></div> -->
     </section>
 
     <section class="section-animation" id="about-section">
@@ -142,7 +138,7 @@
             </div>
             <div>
               <h1 class="small-heading">PHONE</h1>
-              <p>8930046236</p>
+              <p>+91 8930046236</p>
             </div>
 
             <div>
@@ -243,7 +239,7 @@
                     class="view-code-link"
                     target="_blank"
                     href="https://github.com/AarzooKaushik/Jewels"
-                    >View Code</a
+                    >Github</a
                   >
                 </div>
               </div>
@@ -277,7 +273,7 @@
                     class="view-code-link"
                     target="_blank"
                     href="https://github.com/AarzooKaushik/vastra"
-                    >View Code</a
+                    >Github</a
                   >
                 </div>
               </div>
@@ -308,7 +304,7 @@
                     class="view-code-link"
                     target="_blank"
                     href="https://github.com/AarzooKaushik/TechVenture"
-                    >View Code</a
+                    >Github</a
                   >
                 </div>
               </div>
@@ -339,7 +335,7 @@
                     class="view-code-link"
                     target="_blank"
                     href="https://github.com/AarzooKaushik/fitzone"
-                    >View Code</a
+                    >Github</a
                   >
                 </div>
               </div>
@@ -375,7 +371,7 @@
                     class="view-code-link"
                     target="_blank"
                     href="https://github.com/AarzooKaushik/shopy"
-                    >View Code</a
+                    >Github</a
                   >
                 </div>
               </div>
@@ -402,14 +398,15 @@
         <div class="contact-content">
           <div class="contact-form">
             <h1 class="content-title">Message Me</h1>
-            <form
-              id="myForm"
-              action="https://formsubmit.co/aarzookaushik31@gmail.com"
-              method="POST"
-            >
+            <form id="myForm">
               <div class="form-group">
                 <i class="fa-solid fa-user"></i>
-                <input type="text" name="name" id="name" placeholder="Name" />
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Name"
+                />
               </div>
               <div class="form-group">
                 <i class="fa-solid fa-at"></i>
@@ -437,7 +434,7 @@
                   placeholder="Message"
                 ></textarea>
               </div>
-              <div class="error-message"></div>
+
               <button type="submit" class="primary-button">Send Message</button>
             </form>
           </div>
@@ -445,16 +442,6 @@
           <div>
             <h1 class="content-title">Contact Info</h1>
             <div class="personal-info">
-              <div class="social-icons">
-                <a target="_blank" href="https://github.com/AarzooKaushik"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/aarzoo-kaushik-6b9223235/"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </div>
               <div>
                 <h1 class="small-heading">NAME</h1>
                 <p>Aarzoo Kaushik</p>
@@ -469,7 +456,7 @@
               </div>
               <div>
                 <h1 class="small-heading">CALL ME</h1>
-                <p>8930046236</p>
+                <p>+91 8930046236</p>
               </div>
             </div>
           </div>
@@ -493,6 +480,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

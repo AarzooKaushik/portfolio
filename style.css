@@ -493,7 +493,7 @@ input:-webkit-autofill:active {
   border-bottom: 1px solid transparent;
   background: #161616;
   display: flex;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .form-group:focus-within {
   border-bottom: 1px solid #009e66;
@@ -504,13 +504,13 @@ input:-webkit-autofill:active {
   padding: 1.5rem;
 }
 form button {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
-.error-message {
-  height: 20px;
-  font-size: 1.4rem;
-  color: red;
-  margin-top: 1.5rem;
+.form-error {
+  border-bottom: 1px solid red;
+}
+.form-error:focus-within {
+  border-bottom: 1px solid red;
 }
 /*********** footer *******/
 footer {
