@@ -322,7 +322,7 @@ nav {
   background-color: #009e66;
   z-index: -1;
   transition: 0.5s;
-  animation: rotate 3s linear infinite;
+  animation: rotate 5s linear infinite;
 }
 .home-image:hover::before {
   inset: -20px 0;
