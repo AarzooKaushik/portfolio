@@ -142,6 +142,10 @@ section {
   font-size: 1.4rem;
   font-weight: 500;
 }
+.small-heading i {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
 .content-title {
   font-size: 2.6rem;
   font-weight: 500;
