@@ -81,15 +81,40 @@ section {
 }
 .primary-button {
   color: black;
-  background-color: #009e66;
+  background-color: transparent;
   border: 1px solid #009e66;
   border-radius: 30px;
   font-size: 14px;
   padding: 10px 35px;
+  position: relative;
+  overflow: hidden;
+}
+.primary-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #009e66;
+  z-index: -2;
 }
 .primary-button:hover {
-  background-color: #02472f;
   color: white;
+}
+.primary-button::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.primary-button:hover::before {
+  top: 0;
 }
 .secondary-button {
   color: white;
@@ -100,13 +125,32 @@ section {
   border-radius: 30px;
   font-size: 14px;
   padding: 10px 35px;
+  position: relative;
+  overflow: hidden;
+}
+.secondary-button:hover {
+  color: black;
+}
+.secondary-button::before {
+  content: "";
+  position: absolute;
+  background-color: #009e66;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.secondary-button:hover::before {
+  bottom: 0;
 }
 .secondary-button a {
   transition: 0.5s;
   color: white;
 }
 .secondary-button:hover a {
-  color: #009e66;
+  color: black;
 }
 .section-description {
   color: #9f9f9f;
