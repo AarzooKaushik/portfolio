@@ -208,6 +208,7 @@ section {
 }
 .social-icons a:hover {
   color: white;
+  scale: 1.1;
 }
 .dash-bar {
   display: inline-block;
