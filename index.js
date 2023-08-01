@@ -1,21 +1,40 @@
 const navList = document.querySelector(".navlist");
+const navbar = document.querySelector("nav");
 
-function windowScroll() {
-  const navbar = document.querySelector("nav");
+let prevScrollpos = window.pageYOffset;
+let isNavbarVisible = true;
+
+function handleScroll() {
+  const currentScrollPos = window.pageYOffset;
+
   if (
     document.body.scrollTop >= 70 ||
     document.documentElement.scrollTop >= 70
   ) {
-    navbar.classList.add("nav-sticky");
-  } else {
+    if (prevScrollpos > currentScrollPos) {
+      if (!isNavbarVisible) {
+        navbar.style.transform = "translateY(0)";
+        navbar.classList.add("nav-sticky");
+        isNavbarVisible = true;
+      }
+    } else {
+      if (isNavbarVisible) {
+        navbar.style.transform = "translateY(-100%)";
+        isNavbarVisible = false;
+        navbar.classList.remove("nav-sticky");
+      }
+    }
+  }
+
+  if (currentScrollPos === 0) {
+    isNavbarVisible = true;
     navbar.classList.remove("nav-sticky");
   }
+  prevScrollpos = currentScrollPos;
 }
 
-window.addEventListener("scroll", (ev) => {
-  ev.preventDefault();
-  windowScroll();
-});
+window.addEventListener("scroll", handleScroll);
+
 const filterItem = document.querySelector(".project-category");
 const projectItem = document.querySelectorAll(".project-container");
 
