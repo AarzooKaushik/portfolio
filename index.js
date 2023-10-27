@@ -245,7 +245,7 @@ form.addEventListener("submit", (e) => {
   });
 
   if (!hasError) {
-    const formData = new FormData(event.target);
+    const formData = new FormData(e.target);
     const data = {
       username: formData.get("username"),
       email: formData.get("email"),
@@ -256,10 +256,12 @@ form.addEventListener("submit", (e) => {
     emailjs.send("service_u9bdohd", "template_jypynkr", data).then(
       function (response) {
         form.reset();
+        console.log("submit");
         alert("Form submitted successfully.");
       },
       function (error) {
-        alert("Failed to send email:", error);
+        alert("Failed to send email: " + JSON.stringify(error));
+        console.log("submit with error");
       }
     );
   }
