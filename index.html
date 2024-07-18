@@ -20,9 +20,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -79,7 +88,11 @@
           </button>
         </div>
         <div class="home-image">
-          <img src="./assets/portfolio image.webp" alt="" />
+          <img
+            src="./assets/portfolio image.webp"
+            loading="eager"
+            alt="Aarzoo Kaushik"
+          />
         </div>
       </div>
     </section>
@@ -120,13 +133,15 @@
               <span class="dash-bar"></span>
               <div class="social-icons">
                 <a target="_blank" href="https://github.com/AarzooKaushik"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
+                  ><i class="fa-brands fa-github"></i>
+                  <span class="hidden-link">github</span>
+                </a>
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/aarzoo-kaushik-6b9223235/"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
+                  ><i class="fa-brands fa-linkedin"></i>
+                  <span class="hidden-link">linkedIn</span></a
+                >
               </div>
             </div>
           </div>
@@ -220,7 +235,11 @@
             <div class="project-container hidden" data-type="Landing Page">
               <div class="project">
                 <div class="project-image">
-                  <img src="./assets/project-3.webp" alt="" />
+                  <img
+                    src="./assets/project-3.webp"
+                    loading="lazy"
+                    alt="project"
+                  />
                 </div>
                 <div class="project-content">
                   <h2 class="small-heading">Landing Page</h2>
@@ -254,7 +273,11 @@
             <div class="project-container hidden" data-type="Landing Page">
               <div class="project">
                 <div class="project-image">
-                  <img src="./assets/project-2.webp" alt="" />
+                  <img
+                    src="./assets/project-2.webp"
+                    loading="lazy"
+                    alt="project"
+                  />
                 </div>
                 <div class="project-content">
                   <h2 class="small-heading">Landing Page</h2>
@@ -287,7 +310,11 @@
             <div class="project-container" data-type="Website Template">
               <div class="project">
                 <div class="project-image">
-                  <img src="./assets/project-6.webp" alt="" />
+                  <img
+                    src="./assets/project-6.webp"
+                    loading="lazy"
+                    alt="project"
+                  />
                 </div>
                 <div class="project-content">
                   <h2 class="small-heading">Website Template</h2>
@@ -320,7 +347,11 @@
             <div class="project-container" data-type="Website Template">
               <div class="project">
                 <div class="project-image">
-                  <img src="./assets/project-4.webp" alt="" />
+                  <img
+                    src="./assets/project-4.webp"
+                    loading="lazy"
+                    alt="project"
+                  />
                 </div>
                 <div class="project-content">
                   <h2 class="small-heading">Website Template</h2>
@@ -352,7 +383,11 @@
             <div class="project-container hidden" data-type="React App">
               <div class="project">
                 <div class="project-image">
-                  <img src="./assets/project-1.webp" alt="" />
+                  <img
+                    src="./assets/project-1.webp"
+                    loading="lazy"
+                    alt="project"
+                  />
                 </div>
                 <div class="project-content">
                   <h2 class="small-heading">React App</h2>
@@ -387,7 +422,11 @@
             <div class="project-container hidden" data-type="React App">
               <div class="project">
                 <div class="project-image">
-                  <img src="./assets/project-7.png" alt="" />
+                  <img
+                    src="./assets/project-7.webp"
+                    loading="lazy"
+                    alt="project"
+                  />
                 </div>
                 <div class="project-content">
                   <h2 class="small-heading">React App</h2>
