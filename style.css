@@ -185,8 +185,10 @@ section {
   margin-bottom: 0.4rem;
   font-size: 1.4rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
-.small-heading i {
+.small-heading svg {
   font-size: 1.3rem;
   margin-right: 1rem;
   transition: 0.5s;
@@ -422,7 +424,7 @@ nav {
   flex-direction: column;
   gap: 2rem;
 }
-.personal-info div:hover .small-heading i {
+.personal-info div:hover .small-heading svg {
   margin-right: 20px;
 }
 .personal-info .content-title {
@@ -471,12 +473,18 @@ nav {
   gap: 4rem;
   flex-wrap: wrap;
 }
-.languages div {
+.languages div svg {
   transition: 0.5s;
 }
-.languages div:hover {
-  color: #009e66;
+.languages div:hover svg {
+  fill: #009e66;
   transform: scale(1.2);
+}
+.languages div svg path {
+  transition: 0.5s;
+}
+.languages div:hover svg path {
+  fill: #009e66;
 }
 /*********** Project section  ***********/
 
@@ -592,10 +600,9 @@ input:-webkit-autofill:active {
 .form-group:focus-within {
   border-bottom: 1px solid #009e66;
 }
-.form-group i {
-  font-size: 1.4rem;
-  color: #777777;
-  padding: 1.5rem;
+.form-group svg {
+  margin: 1.5rem;
+  margin-right: 1rem;
 }
 form button {
   margin-top: 2.5rem;
@@ -675,7 +682,9 @@ footer span {
     font-size: 2.5rem;
     color: white;
   }
-
+  .small-heading {
+    justify-content: center;
+  }
   .home-content-container {
     height: 85vh;
     flex-direction: column-reverse;
@@ -734,7 +743,7 @@ footer span {
     margin-top: 2rem;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .content-title {
     font-size: 2.2rem;
